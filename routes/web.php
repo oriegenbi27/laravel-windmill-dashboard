@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'welcome');
+Route::view('/', function () {
+    return route('admin.home');
+});
 
 
 //dashboard routes
